@@ -26,7 +26,10 @@ function validateInput(testInput) {
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
-   
+//    if (validateInput(pilot) === "Empty") {
+//     alert("All fields are required");
+
+//    }
 }
 
 async function myFetch() {
@@ -39,6 +42,9 @@ async function myFetch() {
 }
 
 function pickPlanet(planets) {
+    let randomIndex = Math.floor(Math.random() * planets.length);
+
+    return planets[randomIndex];
 }
 
 module.exports.addDestinationInfo = addDestinationInfo;
