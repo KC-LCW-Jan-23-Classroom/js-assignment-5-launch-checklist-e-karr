@@ -40,6 +40,16 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         pilotStatus.textContent = `Pilot ${pilot} is ready for launch`;
         copilotStatus.textContent = `Co-pilot ${copilot} is ready for launch`;
 
+        if (parseInt(fuelLevel) < 10000) {
+            let fuelStatus = document.getElementById('fuelStatus');
+            fuelStatus.textContent = "Fuel level too low for launch";
+        }
+
+        if (parseInt(cargoLevel) > 10000) {
+            let cargoStatus = document.getElementById('cargoStatus');
+            cargoStatus.textContent = "Cargo mass too heavy for launch";
+        }
+
         list.style.visibility = "visible";
     }
 
