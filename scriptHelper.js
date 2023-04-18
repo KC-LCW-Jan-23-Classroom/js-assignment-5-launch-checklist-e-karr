@@ -52,11 +52,11 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
                 cargoStatus.textContent = "Cargo mass too heavy for launch";
             }
 
-            launchStatus.textContent = "Shuttle not ready for launch";
-            launchStatus.style.color = 'red';
+            launchStatus.textContent = "Shuttle Not Ready for Launch";
+            launchStatus.style.color = 'rgb(199, 37, 78)';
         } else {
-            launchStatus.textContent = "Shuttle is ready for launch"
-            launchStatus.style.color = "green";
+            launchStatus.textContent = "Shuttle is Ready for Launch"
+            launchStatus.style.color = "rgb(65, 159, 106)";
         }
         list.style.visibility = "visible";
     }
