@@ -27,10 +27,9 @@ function validateInput(testInput) {
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
-//    if (validateInput(pilot) === "Empty") {
-//     alert("All fields are required");
-
-//    }
+   if (validateInput(pilot) === "Empty") {
+    alert("All fields are required");
+   }
 }
 
 async function myFetch() {

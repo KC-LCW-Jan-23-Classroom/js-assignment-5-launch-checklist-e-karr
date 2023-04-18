@@ -25,10 +25,10 @@ window.addEventListener("load", function() {
     let fuelLevel = document.querySelector('input[name=fuelLevel').value;
     let cargoLevel = document.querySelector('input[name=cargoMass').value;
 
-    // console.log(pilot, copilot, fuelLevel, cargoLevel);
+    let list = document.getElementById("faultyItems");
 
-    // formSubmission(document, pilot, copilot, fuelLevel, cargoLevel);
+    formSubmission(window.document, list, pilot, copilot, fuelLevel, cargoLevel);
 
-    // event.preventDefault();
+    event.preventDefault();
    });
 });
