@@ -44,12 +44,17 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         copilotStatus.textContent = `Co-pilot ${copilot} is ready for launch`;
 
         if (parseInt(fuelLevel) < 10000 || parseInt(cargoLevel) > 10000) {
+            
             if (parseInt(fuelLevel) < 10000) {
                 fuelStatus.textContent = "Fuel level too low for launch";
+            } else {
+                fuelStatus.textContent = "Fuel level high enough for launch";
             }
     
             if (parseInt(cargoLevel) > 10000) {
                 cargoStatus.textContent = "Cargo mass too heavy for launch";
+            } else {
+                cargoStatus.textContent = "Cargo mass low enough for launch";
             }
 
             launchStatus.textContent = "Shuttle Not Ready for Launch";
@@ -60,7 +65,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
             fuelStatus.textContent = "Fuel level high enough for launch";
             cargoStatus.textContent = "Cargo mass low enough for launch";
         }
-        
+
         list.style.visibility = "visible";
     }
 }
