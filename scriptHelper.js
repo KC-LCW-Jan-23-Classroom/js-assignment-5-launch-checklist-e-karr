@@ -60,10 +60,6 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         }
         list.style.visibility = "visible";
     }
-
-
-
-    
 }
 
 async function myFetch() {
